@@ -508,7 +508,7 @@ func addContainerRule(netLink netlinkwrapper.NetLink, isToContainer bool, addr *
 		containerRule.Dst = addr
 		containerRule.Priority = toContainerRulePriority
 	} else {
-		// Example: 1536:	from 10.200.202.222 to 10.200.0.0/16 lookup 2
+		// Example: 1536:	from 10.200.202.222 lookup 2
 		containerRule.Src = addr
 		containerRule.Priority = fromContainerRulePriority
 	}
